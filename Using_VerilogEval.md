@@ -4,21 +4,21 @@
 - [Using VerilogEval to Evaluate Closed-Source LLMs](#using-verilogeval-to-evaluate-closed-source-llms)
     - [1. VerilogEval Project File Structure](#1-verilogeval-project-file-structure)
     - [2. Root Directory: /home/gcp01/verilog-eval](#2-root-directory-homegcp01verilog-eval)
-        - [2.1. build//](#21-build)
-        - [2.2. dataset_code-complete-iccad2023//](#22-dataset_code-complete-iccad2023)
-        - [2.3. dataset_spec-to-rtl//](#23-dataset_spec-to-rtl)
-        - [2.4. scripts//](#24-scripts)
-        - [2.5. .gitignoree](#25-gitignoree)
-        - [2.6. configuree](#26-configuree)
-        - [2.7. configure.acc](#27-configureacc)
-        - [2.8. count_failures.pyy](#28-count_failurespyy)
-        - [2.9. environment.ymll](#29-environmentymll)
-        - [2.10. key_config.jsonn](#210-key_configjsonn)
-        - [2.11. LICENSEE](#211-licensee)
-        - [2.12. Makefile.inn](#212-makefileinn)
-        - [2.13. pass_rate_to_csv.pyy](#213-pass_rate_to_csvpyy)
-        - [2.14. README.mdd](#214-readmemdd)
-        - [2.15. GCP_VerilogEval_Guide.mdd](#215-gcp_verilogeval_guidemdd)
+        - [2.1. build](#21-build)
+        - [2.2. dataset_code-complete-iccad2023](#22-dataset_code-complete-iccad2023)
+        - [2.3. dataset_spec-to-rtl](#23-dataset_spec-to-rtl)
+        - [2.4. scripts](#24-scripts)
+        - [2.5. .gitignore](#25-gitignore)
+        - [2.6. configure](#26-configure)
+        - [2.7. configure.ac](#27-configureac)
+        - [2.8. count_failures.py](#28-count_failurespy)
+        - [2.9. environment.yml](#29-environmentyml)
+        - [2.10. key_config.json](#210-key_configjson)
+        - [2.11. LICENSE](#211-license)
+        - [2.12. Makefile.in](#212-makefilein)
+        - [2.13. pass_rate_to_csv.py](#213-pass_rate_to_csvpy)
+        - [2.14. README.md](#214-readmemd)
+        - [2.15. GCP_VerilogEval_Guide.md](#215-gcp_verilogeval_guidemd)
 - [Getting Started](#getting-started)
 - [✅ Conda Environment Clone Guide](#-conda-environment-clone-guide)
     - [1. Step 1: Create the Environment on the Target Machine](#1-step-1-create-the-environment-on-the-target-machine)
@@ -63,53 +63,53 @@
 ```
 
 
-## 2. Root Directory: /home/gcp01/verilog-eval`
+## 2. Root Directory: /home/gcp01/verilog-eval
 
-### 2.1. build`
+### 2.1. build
 - **Description**: Directory for build outputs.
 
-### 2.2. dataset_code-complete-iccad2023`
+### 2.2. dataset_code-complete-iccad2023
 - **Description**: Directory containing datasets for the `code-complete-iccad2023` task.
 
-### 2.3. dataset_spec-to-rtl`
+### 2.3. dataset_spec-to-rtl
 - **Description**: Directory containing datasets for the `spec-to-rtl` task.
 
-### 2.4. scripts`
+### 2.4. scripts
 - **Description**: Directory containing scripts for various tasks.
   - **sv-generate**: Main script for generating Verilog code from prompts.
     - **Description**: This script processes command-line arguments, loads the API key from a configuration file, and interacts with various models to generate Verilog code.
 
-### 2.5. .gitignore`
+### 2.5. .gitignore
 - **Description**: Git configuration file to specify untracked files to ignore.
 
-### 2.6. configure`
+### 2.6. configure
 - **Description**: Script to configure the build environment.
 
-### 2.7. configure.ac`
+### 2.7. configure.ac
 - **Description**: Autoconf script for generating the `configure` script.
 
-### 2.8. count_failures.py`
+### 2.8. count_failures.py
 - **Description**: Python script to count failures in the evaluation results.
 
-### 2.9. environment.yml`
+### 2.9. environment.yml
 - **Description**: Conda environment configuration file.
 
-### 2.10. key_config.json`
+### 2.10. key_config.json
 - **Description**: Configuration file containing the API key for OpenAI.
 
-### 2.11. LICENSE`
+### 2.11. LICENSE
 - **Description**: License file for the project.
 
-### 2.12. Makefile.in`
+### 2.12. Makefile.in
 - **Description**: Input file for `make` to generate the `Makefile`.
 
-### 2.13. pass_rate_to_csv.py`
+### 2.13. pass_rate_to_csv.py
 - **Description**: Python script to convert pass rates to CSV format.
 
-### 2.14. README.md`
+### 2.14. README.md
 - **Description**: Readme file containing an overview and instructions for the project.
 
-### 2.15. GCP_VerilogEval_Guide.md`
+### 2.15. GCP_VerilogEval_Guide.md
 - **Description**: Guide for setting up and using the VerilogEval environment.
 
 
