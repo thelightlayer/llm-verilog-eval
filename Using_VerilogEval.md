@@ -27,12 +27,12 @@
     - [1. Example Execution](#1-example-execution)
 - [✅ How to Add a New LLM to VerilogEval](#-how-to-add-a-new-llm-to-verilogeval)
     - [1. Step-by-step Guide to Add a New LLM](#1-step-by-step-guide-to-add-a-new-llm)
-        - [1.1. Update the Model Lists in sv-generatee](#11-update-the-model-lists-in-sv-generatee)
+        - [1.1. Update the Model Lists in sv-generate](#11-update-the-model-lists-in-sv-generate)
         - [1.2. Add Model Aliases Optional](#12-add-model-aliases-optional)
         - [1.3. Implement the Model Integration](#13-implement-the-model-integration)
         - [1.4. Update the API Key Configuration](#14-update-the-api-key-configuration)
         - [1.5. Running Full Evaluation](#15-running-full-evaluation)
-    - [2. 📝 Example : Adding the Anthropic Claude Modell](#2--example--adding-the-anthropic-claude-modell)
+    - [2. 📝 Example : Adding the Anthropic Claude Model](#2--example--adding-the-anthropic-claude-model)
 - [Tracking Spending](#tracking-spending)
         - [1. GPT-4o OpenAI](#1-gpt-4o-openai)
         - [2. GPT-o1-mini OpenAI CoT](#2-gpt-o1-mini-openai-cot)
@@ -65,51 +65,51 @@
 
 ## 2. Root Directory: /home/gcp01/verilog-eval`
 
-### 2.1. build//`
+### 2.1. build`
 - **Description**: Directory for build outputs.
 
-### 2.2. dataset_code-complete-iccad2023//`
+### 2.2. dataset_code-complete-iccad2023`
 - **Description**: Directory containing datasets for the `code-complete-iccad2023` task.
 
-### 2.3. dataset_spec-to-rtl//`
+### 2.3. dataset_spec-to-rtl`
 - **Description**: Directory containing datasets for the `spec-to-rtl` task.
 
-### 2.4. scripts//`
+### 2.4. scripts`
 - **Description**: Directory containing scripts for various tasks.
   - **sv-generate**: Main script for generating Verilog code from prompts.
     - **Description**: This script processes command-line arguments, loads the API key from a configuration file, and interacts with various models to generate Verilog code.
 
-### 2.5. .gitignoree`
+### 2.5. .gitignore`
 - **Description**: Git configuration file to specify untracked files to ignore.
 
-### 2.6. configuree`
+### 2.6. configure`
 - **Description**: Script to configure the build environment.
 
-### 2.7. configure.acc`
+### 2.7. configure.ac`
 - **Description**: Autoconf script for generating the `configure` script.
 
-### 2.8. count_failures.pyy`
+### 2.8. count_failures.py`
 - **Description**: Python script to count failures in the evaluation results.
 
-### 2.9. environment.ymll`
+### 2.9. environment.yml`
 - **Description**: Conda environment configuration file.
 
-### 2.10. key_config.jsonn`
+### 2.10. key_config.json`
 - **Description**: Configuration file containing the API key for OpenAI.
 
-### 2.11. LICENSEE`
+### 2.11. LICENSE`
 - **Description**: License file for the project.
 
-### 2.12. Makefile.inn`
+### 2.12. Makefile.in`
 - **Description**: Input file for `make` to generate the `Makefile`.
 
-### 2.13. pass_rate_to_csv.pyy`
+### 2.13. pass_rate_to_csv.py`
 - **Description**: Python script to convert pass rates to CSV format.
 
-### 2.14. README.mdd`
+### 2.14. README.md`
 - **Description**: Readme file containing an overview and instructions for the project.
 
-### 2.15. GCP_VerilogEval_Guide.mdd`
+### 2.15. GCP_VerilogEval_Guide.md`
 - **Description**: Guide for setting up and using the VerilogEval environment.
 
 
@@ -205,7 +205,7 @@ VerilogEval supports multiple LLM providers, including OpenAI and NVIDIA models.
 
 ## 1. Step-by-step Guide to Add a New LLM
 
-### 1.1. Update the Model Lists in sv-generatee`
+### 1.1. Update the Model Lists in sv-generate`
 Locate the model list definitions in the `sv-generate` script (around line 80-100):
 
 ```python
@@ -334,7 +334,7 @@ make -j4
 ```
 <br><br>
 
-## 2. 📝 Example : Adding the Anthropic Claude Modell`
+## 2. 📝 Example : Adding the Anthropic Claude Model`
 
 `key_config.json`
 
