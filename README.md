@@ -10,7 +10,7 @@
     - [2. Step 2: Activate the New Environment](#2-step-2-activate-the-new-environment)
 - [✅ Usag Evaluation Tool](#-usag-evaluation-tool)
     - [1. Example Execution](#1-example-execution)
-- [✅ How to Customize a New LLM for VerilogEval](#-how-to-add-a-new-llm-to-verilogeval)
+- [✅ How to Customize a New LLM for VerilogEval](#-how-to-customize-a-new-llm-for-verilogeval)
     - [1. Step-by-step Guide to Add a New LLM](#1-step-by-step-guide-to-add-a-new-llm)
         - [1.1. Update the Model Lists in sv-generate](#11-update-the-model-lists-in-sv-generate)
         - [1.2. Add Model Aliases Optional](#12-add-model-aliases-optional)
