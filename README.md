@@ -58,37 +58,19 @@
   - **sv-generate**: Main script for generating Verilog code from prompts.
     - **Description**: This script processes command-line arguments, loads the API key from a configuration file, and interacts with various models to generate Verilog code.
 
-### 2.5. .gitignore
-- **Description**: Git configuration file to specify untracked files to ignore.
-
-### 2.6. configure
-- **Description**: Script to configure the build environment.
-
-### 2.7. configure.ac
-- **Description**: Autoconf script for generating the `configure` script.
-
-### 2.8. count_failures.py
+### 2.5. count_failures.py
 - **Description**: Python script to count failures in the evaluation results.
 
-### 2.9. environment.yml
+### 2.6. environment.yml
 - **Description**: Conda environment configuration file.
 
-### 2.10. key_config.json
+### 2.7. key_config.json
 - **Description**: Configuration file containing the API key for OpenAI.
 
-### 2.11. LICENSE
-- **Description**: License file for the project.
-
-### 2.12. Makefile.in
-- **Description**: Input file for `make` to generate the `Makefile`.
-
-### 2.13. pass_rate_to_csv.py
+### 2.8. pass_rate_to_csv.py
 - **Description**: Python script to convert pass rates to CSV format.
 
-### 2.14. README.md
-- **Description**: Readme file containing an overview and instructions for the project.
-
-### 2.15. GCP_VerilogEval_Guide.md
+### 2.9. GCP_VerilogEval_Guide.md
 - **Description**: Guide for setting up and using the VerilogEval environment.
 
 
