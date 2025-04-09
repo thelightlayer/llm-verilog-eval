@@ -10,7 +10,7 @@
     - [2. Step 2: Activate the New Environment](#2-step-2-activate-the-new-environment)
 - [✅ Usag Evaluation Tool](#-usag-evaluation-tool)
     - [1. Example Execution](#1-example-execution)
-- [✅ How to Add a New LLM to VerilogEval](#-how-to-add-a-new-llm-to-verilogeval)
+- [✅ How to Customize a New LLM for VerilogEval](#-how-to-add-a-new-llm-to-verilogeval)
     - [1. Step-by-step Guide to Add a New LLM](#1-step-by-step-guide-to-add-a-new-llm)
         - [1.1. Update the Model Lists in sv-generate](#11-update-the-model-lists-in-sv-generate)
         - [1.2. Add Model Aliases Optional](#12-add-model-aliases-optional)
@@ -74,7 +74,7 @@
 - **Description**: Guide for setting up and using the VerilogEval environment.
 
 
-<br><br><br>
+<br><br>
 
 # Getting Started
 
@@ -160,7 +160,7 @@ make -j4
 
 <br><br>
 
-# ✅ How to Add a New LLM to VerilogEval
+# ✅ How to Customize a New LLM for VerilogEval
 
 VerilogEval supports multiple LLM providers, including OpenAI and NVIDIA models. Adding a new model requires updating the sv-generate script and potentially implementing new API integrations.
 
