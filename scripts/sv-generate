@@ -137,7 +137,8 @@ models_to_repeat_system_to_human_messages = [
 
 available_tasks = [
   "code-complete-iccad2023",
-  "spec-to-rtl"
+  "spec-to-rtl",
+  "code-complete-machine"
 ]
 
 #-------------------------------------------------------------------------
@@ -160,6 +161,15 @@ class VerboseOutput:
 prompts = {}
 
 prompts['code-complete-iccad2023'] = {
+  'system_msg' : """
+You only complete chats with syntax correct Verilog code. End the Verilog module code completion with 'endmodule'. Do not include module, input and output definitions
+""",
+  'prompt_prefix' : """
+// Implement the Verilog module based on the following description. Assume that signals are positive clock/clk triggered unless otherwise stated.
+"""
+}
+
+prompts['code-complete-machine'] = {
   'system_msg' : """
 You only complete chats with syntax correct Verilog code. End the Verilog module code completion with 'endmodule'. Do not include module, input and output definitions
 """,
@@ -319,7 +329,7 @@ def main():
       prompt_example_prefix = f.read()
     full_prompt += prompt_example_prefix
 
-  if task == "code-complete-iccad2023":
+  if task == "code-complete-iccad2023" or task == "code-complete-machine":
     prefix = True
     prefixed_prompt = []
 
@@ -459,7 +469,7 @@ def main():
   file = open( opts.output, 'w' )
   print( "", file=file )
 
-  if task == "code-complete-iccad2023":
+  if task == "code-complete-iccad2023" or task == "code-complete-machine":
     # First pass to find backticks and if module exists
     backticks_count  = 0
     endmodule_before_startmodule = False
