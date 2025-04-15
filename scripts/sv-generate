@@ -573,22 +573,6 @@ def main():
 
     for line in iter(resp.content.splitlines()):
 
-      # if not found_code_start:
-      #   if line.strip() == "<CODE>":
-      #     found_code_start = True
-      #   elif line.lstrip().startswith("<CODE>"):
-      #     found_code_lines.append( line.lstrip().replace("<CODE>","") )
-      #     found_code_start = True
-
-      # elif found_code_start and not found_code_end:
-      #   if line.strip() == "</CODE>":
-      #     found_code_end = True
-      #   elif line.rstrip().endswith("</CODE>"):
-      #     found_code_lines.append( line.rstrip().replace("</CODE>","") )
-      #     found_code_end = True
-      #   else:
-      #     found_code_lines.append( line )
-
       if not found_code_start:
         if line.strip() == "[BEGIN]":
           found_code_start = True
